@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Cards from "./components/Cards/Cards";
 import Search from "./components/Search/Search"
 import Pagination from "./components/Pagination/Pagination";
+import Navbar from "./components/Navbar/Navbar"
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
   //////// APP
   return <div className="App">
     <div className="App">
+      <Navbar/>
       <h1 className="text-center mb-3">Characters</h1>
       <Search setSearch={setSearch} updatePageNumber={updatePageNumber} />
       <div className="container">
