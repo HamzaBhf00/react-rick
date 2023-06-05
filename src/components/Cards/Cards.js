@@ -27,7 +27,7 @@ const Card = ({ results }) => {
     });
 
   } else {
-    display = "No Characters Found :/";
+    display = "No se encontraron caracteres";
   }
 
   return <>{display}</>;

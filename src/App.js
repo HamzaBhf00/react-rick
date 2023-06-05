@@ -3,15 +3,16 @@ import "bootstrap/dist/js/bootstrap"
 import React, { useState, useEffect } from "react";
 import Cards from "./components/Cards/Cards";
 import Search from "./components/Search/Search"
+import Pagination from "./components/Pagination/Pagination";
 
 
 function App() {
 
   /////////API
-  let [fetchedData, updateFetchedData] = useState([]);
-  let { info, results } = fetchedData;
   let [pageNumber, updatePageNumber] = useState(1);
+  let [fetchedData, updateFetchedData] = useState([]);
   let [search, setSearch] = useState("");
+  let { info, results } = fetchedData;
 
   let api = `https://rickandmortyapi.com/api/character/?page=${pageNumber}&name=${search}`;
 
@@ -22,7 +23,7 @@ function App() {
     })();
   }, [api]);
 
-
+  //////// APP
   return <div className="App">
     <div className="App">
       <h1 className="text-center mb-3">Characters</h1>
@@ -38,6 +39,11 @@ function App() {
         </div>
       </div>
     </div>
+    <Pagination
+      info={info}
+      pageNumber={pageNumber}
+      updatePageNumber={updatePageNumber}
+    />
   </div>
 
 }
