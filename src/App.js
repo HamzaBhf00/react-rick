@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap"
+import Cards from "./components/Cards/Cards";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return <div className="App">
+
+    <h1 className="text-center ubuntu my-5">Rick & Morty <span className="text-primary">React</span></h1>
+    <div className="container">
+      <div className="row justify-content-center text-center">
+  <Cards/>
+        
+
+      </div>
     </div>
-  );
+
+
+  </div>
 }
 
 export default App;
