@@ -28,9 +28,9 @@ const Location = () => {
     <div className="container">
       <div className="row mb-3 justify-content-center">
         <div className="row justify-content-center">
-          <div className="col-lg-3 col-12 mb-4">
+          <div className="col-lg-3 col-12 mb-4 mt-4">
             <h4 className="text-center mb-4">Elegir ubicación</h4>
-            <InputGroup name="Location" changeID={setNumber} total={126} />
+            <InputGroup name="Ubicación" changeID={setNumber} total={126} />
           </div>
           <h1 className="text-center mb-3">
             Ubicación :

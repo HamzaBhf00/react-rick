@@ -12,6 +12,9 @@ const Navbar = () => {
                         <NavLink to="/"><button type="button" class="btn btn-success">Home</button></NavLink>
                     </li>
                     <li class="nav-item">
+                        <NavLink to="/characters"><button type="button" class="btn btn-success">Caracteres</button></NavLink>
+                    </li>
+                    <li class="nav-item">
                         <NavLink to="/location"><button type="button" class="btn btn-success">Ubicación</button></NavLink>
                     </li>
                     <li class="nav-item">
