@@ -18,10 +18,9 @@ const CardDetails = () => {
     }, [api]);
 
     return (
-        <div className="container d-flex justify-content-center mb-5">
+        <div className="container d-flex justify-content-center mb-5 mt-5">
             <div className="d-flex flex-column gap-3">
-                <h1 className="text-center">{name}</h1>
-
+                <h1 className="text-center">Detalles de caracter: <span className="text-success">{name}</span></h1>
                 <img className="img-fluid" src={image} alt="" />
                 {(() => {
                     if (status === "Dead") {
@@ -34,19 +33,19 @@ const CardDetails = () => {
                 })()}
                 <div className="content">
                     <div className="">
-                        <span className="fw-bold">Gender : </span>
+                        <span className="fw-bold">Género : </span>
                         {gender}
                     </div>
                     <div className="">
-                        <span className="fw-bold">Location: </span>
+                        <span className="fw-bold">Ubicación: </span>
                         {location?.name}
                     </div>
                     <div className="">
-                        <span className="fw-bold">Origin: </span>
+                        <span className="fw-bold">Origen: </span>
                         {origin?.name}
                     </div>
                     <div className="">
-                        <span className="fw-bold">Species: </span>
+                        <span className="fw-bold">Especies: </span>
                         {species}
                     </div>
                 </div>

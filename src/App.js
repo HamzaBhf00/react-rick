@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/Routers/Home";
 import Navbar from "./components/Navbar/Navbar"
 import Location from "./components/Routers/Location"
 import About from "./components/Routers/About"
@@ -21,7 +22,7 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/about" element={<About />} />
         <Route path="/:id" element={<CardDetails />} />
-        <Route path="/episodes/:id" element={<CardDetails />} />
+        <Route path="/characters/:id" element={<CardDetails />} />
         <Route path="/location/:id" element={<CardDetails />} />
       </Routes>
 
@@ -29,10 +30,4 @@ function App() {
   );
 }
 
-
-const Home = () => {
-
-
-}
-
-export default App;
+export default App

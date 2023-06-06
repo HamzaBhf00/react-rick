@@ -32,11 +32,10 @@ const Location = () => {
             <h4 className="text-center mb-4">Elegir ubicación</h4>
             <InputGroup name="Ubicación" changeID={setNumber} total={126} />
           </div>
-          <h1 className="text-center mb-3">
-            Ubicación :
-            <span className="text-success">
-              {" "}
-              {name === "" ? "Unknown" : name}
+          <h1 className="text-center mb-3">Ubicación:
+            <span
+              className="text-success">
+              {" "}{name === "" ? "Unknown" : name}
             </span>
           </h1>
         </div>
