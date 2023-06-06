@@ -26,7 +26,7 @@ const Characters = () => {
                 <div className="row justify-content-center">
                     <div className="col-lg-8 col-12">
                         <div className="row">
-                            <Cards results={results} />
+                            <Cards page="/" results={results} />
                         </div>
                     </div>
                 </div>

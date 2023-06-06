@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar"
 import Location from "./components/Routers/Location"
 import About from "./components/Routers/About"
 import Characters from "./components/Routers/Characters";
+import CardDetails from "./components/Cards/CardDetails";
 
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
         <Route path="/characters" element={<Characters />} />
         <Route path="/location" element={<Location />} />
         <Route path="/about" element={<About />} />
+        <Route path="/:id" element={<CardDetails />} />
+        <Route path="/episodes/:id" element={<CardDetails />} />
+        <Route path="/location/:id" element={<CardDetails />} />
       </Routes>
 
     </Router>
