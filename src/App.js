@@ -6,7 +6,6 @@ import Cards from "./components/Cards/Cards";
 import Search from "./components/Search/Search"
 import Pagination from "./components/Pagination/Pagination";
 import Navbar from "./components/Navbar/Navbar"
-import Episodes from "./components/Routers/Episodes"
 import Location from "./components/Routers/Location"
 import About from "./components/Routers/About"
 
@@ -21,7 +20,6 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/episodes" element={<Episodes />} />
         <Route path="/location" element={<Location />} />
         <Route path="/about" element={<About />} />
       </Routes>
@@ -54,8 +52,7 @@ const Home = () => {
       <h1 className="text-center mb-3">Characters</h1>
       <Search setSearch={setSearch} updatePageNumber={updatePageNumber} />
       <div className="container">
-        <div className="row">
-          Filter component will be placed here
+        <div className="row justify-content-center">
           <div className="col-lg-8 col-12">
             <div className="row">
               <Cards results={results} />

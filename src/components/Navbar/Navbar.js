@@ -1,8 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
 
-
-
 const Navbar = () => {
     return (
 
@@ -14,9 +12,6 @@ const Navbar = () => {
                         <NavLink to="/"><button type="button" class="btn btn-success">Home</button></NavLink>
                     </li>
                     <li class="nav-item">
-                        <NavLink to="/episodes"><button type="button" class="btn btn-success">Episodios</button></NavLink>
-                    </li>
-                    <li class="nav-item">
                         <NavLink to="/location"><button type="button" class="btn btn-success">Ubicación</button></NavLink>
                     </li>
                     <li class="nav-item">
@@ -26,8 +21,6 @@ const Navbar = () => {
                 </ul>
             </div>
         </nav>
-
-
     )
 }
 
