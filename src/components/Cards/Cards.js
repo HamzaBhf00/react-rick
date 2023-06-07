@@ -13,6 +13,7 @@ const Card = ({ results, page }) => {
 
       return (
         <Link
+        
           style={{ textDecoration: "none" }}
           to={`${page}${id}`}
           key={id}
@@ -25,13 +26,12 @@ const Card = ({ results, page }) => {
             <div className={`${styles.content}`}>
               <div className="fs-5 fw-bold mb-4">{name}</div>
               <div className="">
-                <div className="fs-6 fw-normal">Last Location</div>
+                <div className="fs-6 fw-normal">Ubicación</div>
                 <div className="fs-5">{location.name}</div>
               </div>
             </div>
           </div>
 
-          
         </Link>
       );
     });

@@ -20,7 +20,7 @@ const CardDetails = () => {
     return (
         <div className="container d-flex justify-content-center mb-5 mt-5">
             <div className="d-flex flex-column gap-3">
-                <h1 className="text-center">Detalles de caracter: <span className="text-success">{name}</span></h1>
+                <h1 className="text-center">Detalles de personajes: <span className="text-success">{name}</span></h1>
                 <img className="img-fluid" src={image} alt="" />
                 {(() => {
                     if (status === "Dead") {

@@ -4,21 +4,21 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
 
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="collapse navbar-collapse justify-content-center">
-                <ul class="navbar-nav gap-5 my-3">
+        <nav className="navbar navbar-expand-lg bg-dark">
+            <div className="collapse navbar-collapse justify-content-center">
+                <ul className="navbar-nav gap-5 my-3">
 
-                    <li class="nav-item">
-                        <NavLink to="/"><button type="button" class="btn btn-success">Home</button></NavLink>
+                    <li className="nav-item">
+                        <NavLink to="/"><button type="button" className="btn btn-success">Home</button></NavLink>
                     </li>
-                    <li class="nav-item">
-                        <NavLink to="/characters"><button type="button" class="btn btn-success">Caracteres</button></NavLink>
+                    <li className="nav-item">
+                        <NavLink to="/characters"><button type="button" className="btn btn-success">Personajes</button></NavLink>
                     </li>
-                    <li class="nav-item">
-                        <NavLink to="/location"><button type="button" class="btn btn-success">Ubicación</button></NavLink>
+                    <li className="nav-item">
+                        <NavLink to="/location"><button type="button" className="btn btn-success">Ubicación</button></NavLink>
                     </li>
-                    <li class="nav-item">
-                        <NavLink to="/about"><button type="button" class="btn btn-success">Sobre Nosotros</button></NavLink>
+                    <li className="nav-item">
+                        <NavLink to="/about"><button type="button" className="btn btn-success">Sobre Nosotros</button></NavLink>
                     </li>
 
                 </ul>

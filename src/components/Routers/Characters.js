@@ -20,7 +20,7 @@ const Characters = () => {
 
     return <div className="App">
         <div className="App">
-            <h1 className="text-center mb-3 mt-5">Caracteres</h1>
+            <h1 className="text-center mb-3 mt-5">Personajes</h1>
             <Search setSearch={setSearch} updatePageNumber={updatePageNumber} />
             <div className="container">
                 <div className="row justify-content-center">
